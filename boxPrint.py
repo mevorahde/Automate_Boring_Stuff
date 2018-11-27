@@ -12,6 +12,7 @@ def box_print(symbol, width, height):
         raise Exception('Width must be greater than 2.')
     if height <= 2:
         raise Exception('Height must be greater than 2.')
+<<<<<<< HEAD
     print(symbol * width)
     for i in range(height - 2):
         print(symbol + (' ' * (width - 2)) + symbol)
@@ -23,3 +24,24 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
         box_print(sym, w, h)
     except Exception as err:
         print('An exception happen: ' + str(err))
+||||||| merged common ancestors
+        print (symbol * width)
+        for i in range(height - 2):
+            print(symbol + (' ' * (width - 2)) + symbol)
+        
+    for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
+       try:
+           boxPrint(sym, w, h)
+    except Exception as err:
+        print('An exception happen: ' + str(err))
+=======
+        print (symbol * width)
+        for i in range(height - 2):
+            print(symbol + (' ' * (width - 2)) + symbol)
+        
+    for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
+        try:
+            boxPrint(sym, w, h)
+        except Exception as err:
+            print('An exception happen: ' + str(err))
+>>>>>>> 6ad6ddd201ba9e13ba611447695a1fc2efb4a444
